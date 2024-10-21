@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Bankdash.</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Transaksi</a></li>
+            <li><a href="#">Akun</a></li>
+            <li><a href="#">Investasi</a></li>
+            <li><a href="#">Kartu Kredit</a></li>
+            <li><a href="#">Pinjaman</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Pengaturan</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign-Up</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Cari sesuatu...">
+            <div class="profile">
+                <img src="old.jpg" alt="Profile">
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="cards">
+                <div class="card">
+                    <h3>Saldo: $5,756</h3>
+                    <p>Nama Pemegang: Gita Sekar Andarini</p>
+                    <p>Valid Thru: 12/22</p>
+                </div>
+                <div class="card">
+                    <h3>Saldo: $3,200</h3>
+                    <p>Nama Pemegang: Rosie Lewis</p>
+                    <p>Valid Thru: 01/24</p>
+                </div>
+            </div>
+
+            <div class="weekly-activity">
+                <h3>Aktivitas Mingguan</h3>
+                <canvas id="activityChart"></canvas>
+            </div>
+
+            <div class="quick-transfer">
+                <h3>Transfer terbaru</h3>
+                <div class="transfer-item">
+                    <img src="fotogitacantik.jpg" alt="Gita Sekar Andarini">
+                    <p>Gita Sekar Andarini</p>
+                </div>
+                <div class="transfer-item">
+                    <img src="p2.jpg" alt="Rosie Lewis">
+                    <p>Rosie Lewis</p>
+                </div>
+                <div class="transfer-item">
+                    <img src="indiracewegw.jpg" alt="Indira Seruni">
+                    <p>Indira Seruni</p>
+                </div>
+            </div>
+
+            <div class="balance-history">
+                <h3>Riwayat Saldo</h3>
+                <canvas id="balanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

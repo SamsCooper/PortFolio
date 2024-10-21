@@ -1,0 +1,171 @@
+/* Style umum yang sudah ada sebelumnya */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #2d3436;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #0984e3;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weekly-activity, .quick-transfer, .balance-history {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.quick-transfer .transfer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quick-transfer .transfer-item img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.quick-transfer input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.quick-transfer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quick-transfer button:hover {
+    background-color: #74b9ff;
+}
+
+/* Media query untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px; /* Perkecil lebar sidebar */
+    }
+
+    .sidebar h2, .sidebar ul li a {
+        display: none; /* Sembunyikan teks di dalam sidebar */
+    }
+
+    .main-content {
+        margin-left: 60px; /* Sesuaikan margin agar cocok dengan sidebar yang lebih kecil */
+    }
+
+    .header input[type="text"] {
+        width: 100%; /* Lebar penuh pada pencarian */
+    }
+
+    .cards, .weekly-activity, .quick-transfer, .balance-history {
+        width: 100%; /* Lebar penuh untuk konten */
+    }
+
+    .card {
+        width: calc(100% - 30px); /* Lebar penuh untuk kartu */
+    }
+}
